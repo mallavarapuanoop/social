@@ -24,7 +24,7 @@
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i4T-v1-RS8">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i4T-v1-RS8" customClass="RoundBtn" customModule="social" customModuleProvider="target">
                                 <rect key="frame" x="113" y="145" width="150" height="150"/>
                                 <color key="backgroundColor" red="0.23137254901960785" green="0.32549019607843138" blue="0.60392156862745094" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -36,19 +36,19 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="0yU-5l-weA">
                                 <rect key="frame" x="20" y="325" width="335" height="146"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a1m-bB-Mgn">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a1m-bB-Mgn" customClass="FancyField" customModule="social" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="335" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KuJ-LC-r9i">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KuJ-LC-r9i" customClass="FancyField" customModule="social" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="55" width="335" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MMo-Ts-59J">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MMo-Ts-59J" customClass="FancyBtn" customModule="social" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="110" width="335" height="36"/>
                                         <color key="backgroundColor" red="0.8666666666666667" green="0.17254901960784313" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -71,14 +71,23 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hC3-0h-0yI" customClass="FancyView" customModule="social" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                                <color key="backgroundColor" red="0.43435368990118117" green="0.65264118020304562" blue="0.40243381566735131" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="d47-6P-1hV"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="QOf-Xp-9N3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="0jV-nQ-zQF"/>
+                            <constraint firstItem="hC3-0h-0yI" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="1fT-A5-5ha"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QOf-Xp-9N3" secondAttribute="trailing" constant="16" id="29h-2Q-nfu"/>
                             <constraint firstItem="4Rc-nT-Kkz" firstAttribute="top" secondItem="6qn-AB-82F" secondAttribute="top" id="8yC-ra-hy3"/>
                             <constraint firstItem="6qn-AB-82F" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AoN-sl-Jqc"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0yU-5l-weA" secondAttribute="trailing" constant="20" id="BUa-3q-lhH"/>
+                            <constraint firstItem="hC3-0h-0yI" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Byi-2T-6kQ"/>
                             <constraint firstItem="4Rc-nT-Kkz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="CIm-ae-I4P"/>
                             <constraint firstItem="0yU-5l-weA" firstAttribute="top" secondItem="i4T-v1-RS8" secondAttribute="bottom" constant="30" id="GOI-rE-dqa"/>
                             <constraint firstItem="QOf-Xp-9N3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="GYU-UP-dmB"/>
@@ -89,6 +98,7 @@
                             <constraint firstAttribute="bottom" secondItem="6qn-AB-82F" secondAttribute="bottom" id="dbP-T8-yRa"/>
                             <constraint firstItem="i4T-v1-RS8" firstAttribute="top" secondItem="QOf-Xp-9N3" secondAttribute="bottom" constant="45" id="eCL-5p-7DW"/>
                             <constraint firstItem="6qn-AB-82F" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="hAl-e3-0Ih"/>
+                            <constraint firstItem="hC3-0h-0yI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="hq0-53-Jxd"/>
                             <constraint firstItem="6qn-AB-82F" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="lC1-Xq-Ag0"/>
                             <constraint firstItem="i4T-v1-RS8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xMt-kE-lOh"/>
                             <constraint firstItem="4Rc-nT-Kkz" firstAttribute="centerX" secondItem="6qn-AB-82F" secondAttribute="centerX" id="xkg-TV-qeB"/>
