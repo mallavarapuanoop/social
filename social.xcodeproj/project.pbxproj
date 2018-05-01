@@ -19,6 +19,7 @@
 		03E40A4820968BEF0037FEBA /* FancyField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E40A4720968BEE0037FEBA /* FancyField.swift */; };
 		03E40A4A20968CDE0037FEBA /* FancyBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E40A4920968CDE0037FEBA /* FancyBtn.swift */; };
 		03E40A562098D4120037FEBA /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E40A552098D4120037FEBA /* FeedVC.swift */; };
+		03E40A582098E7BB0037FEBA /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E40A572098E7BB0037FEBA /* CircleView.swift */; };
 		E46B4F77FCD54315535ED4BE /* Pods_social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4EA697DDEA682D43526A6DF /* Pods_social.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +39,7 @@
 		03E40A4920968CDE0037FEBA /* FancyBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyBtn.swift; sourceTree = "<group>"; };
 		03E40A5420979DF90037FEBA /* social.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = social.entitlements; sourceTree = "<group>"; };
 		03E40A552098D4120037FEBA /* FeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
+		03E40A572098E7BB0037FEBA /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 		4D6B6349BD57578E50422C1C /* Pods-social.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-social.release.xcconfig"; path = "Pods/Target Support Files/Pods-social/Pods-social.release.xcconfig"; sourceTree = "<group>"; };
 		CB7707B2AE7F60DF75FA9E44 /* Pods-social.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-social.debug.xcconfig"; path = "Pods/Target Support Files/Pods-social/Pods-social.debug.xcconfig"; sourceTree = "<group>"; };
 		E4EA697DDEA682D43526A6DF /* Pods_social.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_social.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -114,6 +116,7 @@
 				03E40A4520968A150037FEBA /* RoundBtn.swift */,
 				03E40A4720968BEE0037FEBA /* FancyField.swift */,
 				03E40A4920968CDE0037FEBA /* FancyBtn.swift */,
+				03E40A572098E7BB0037FEBA /* CircleView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -275,6 +278,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03E40A582098E7BB0037FEBA /* CircleView.swift in Sources */,
 				03E40A4820968BEF0037FEBA /* FancyField.swift in Sources */,
 				03E40A2C209631320037FEBA /* ViewController.swift in Sources */,
 				03E40A4620968A150037FEBA /* RoundBtn.swift in Sources */,
