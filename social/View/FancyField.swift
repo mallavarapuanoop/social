@@ -14,8 +14,9 @@ class FancyField: UITextField {
         super.awakeFromNib()
     
          layer.shadowColor = UIColor(red: SHADOW_GRAY, green: SHADOW_GRAY, blue: SHADOW_GRAY, alpha: 0.2).cgColor
-        layer.borderWidth = 1.0
+        layer.borderWidth = 0.5
         layer.cornerRadius = 5.0
+        
         }
     override func textRect(forBounds bounds: CGRect) -> CGRect {
         return bounds.insetBy(dx: 10, dy: 5)
@@ -23,5 +24,5 @@ class FancyField: UITextField {
     override func editingRect(forBounds bounds: CGRect) -> CGRect {
         return bounds.insetBy(dx: 10, dy: 5)
     }
-
+    
 }
